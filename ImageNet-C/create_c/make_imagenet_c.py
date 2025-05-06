@@ -576,11 +576,14 @@ if __name__ == "__main__":
     # Path to your dataset containing 8 class folders
     # Modify this to match your dataset path
     # DATASET_PATH = "./your_dataset_path"
-    DATASET_PATH = "C:/Users/DESKTOP/pesquisaGabriel/imagensLimpasMangoLeaf"
+
+
+    #In our case, the dataset we want to corrupt is MangoLeafDB. Which is made up of 8 classes, where each class has 500 images.
+    #And it is located in "C:/MangoLeafDB"
+    DATASET_PATH = "C:/MangoLeafDB"
     
-    # Path where distorted images will be saved
-    # OUTPUT_DIR = "./distorted_dataset"
-    OUTPUT_DIR = "C:/Users/DESKTOP/pesquisaGabriel/BANCOSCORROMPIDOS"
+    #After executing the code we will have the MangoLeafDB-C dataset which is the MangoLeafDB with the structure described in readme.md
+    OUTPUT_DIR = "C:/MangoLeafDB-C"
     
     # Apply all distortions
     apply_distortions(DATASET_PATH, OUTPUT_DIR)
